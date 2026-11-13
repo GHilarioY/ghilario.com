@@ -1,0 +1,151 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>GHilario — Proyectos e investigación</title>
+<meta name="description" content="Proyectos e investigación de GHilario. Una sola señal.">
+<meta name="theme-color" content="#000000">
+<meta property="og:title" content="GHilario">
+<meta property="og:description" content="Proyectos e investigación. Una sola señal.">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap">
+<style>
+body{margin:0;background:#000}
+a{color:#2997FF;text-decoration:none}a:hover{color:#5AB0FF}
+.trace{fill:none;stroke:#18202B;stroke-width:1.5;stroke-linejoin:round}
+.pulse{fill:none;stroke-width:2.2;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:60 1940;stroke-dashoffset:2000;animation:gh-flow 4.5s cubic-bezier(.55,0,.75,1) infinite;filter:drop-shadow(0 0 6px rgba(41,151,255,.95))}
+.core{animation:gh-breathe 2.25s ease-in-out infinite;filter:drop-shadow(0 0 14px rgba(41,151,255,.8))}
+.via{fill:#000;stroke:#26303D;stroke-width:1.5}
+.split{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px}
+.tile{transition:transform .5s cubic-bezier(.2,.8,.2,1)}
+.tile:hover{transform:translateY(-6px)}
+.fork{display:block}
+.glass-pill{position:relative;background:linear-gradient(180deg,rgba(255,255,255,.14),rgba(255,255,255,.04));border:1px solid rgba(255,255,255,.18);box-shadow:inset 0 1px 0 rgba(255,255,255,.35),inset 0 -1px 0 rgba(255,255,255,.06),0 8px 32px rgba(0,0,0,.6),0 0 24px rgba(41,151,255,.18);-webkit-backdrop-filter:blur(18px) saturate(180%);backdrop-filter:blur(18px) saturate(180%)}
+.glass-pill:hover{border-color:rgba(255,255,255,.3)}
+.glass-text{background:linear-gradient(110deg,rgba(255,255,255,.62) 0%,#FFFFFF 22%,rgba(255,255,255,.62) 38%,rgba(255,255,255,.62) 62%,#CFE6FF 80%,rgba(255,255,255,.62) 100%);background-size:250% 100%;-webkit-background-clip:text;background-clip:text;color:transparent;-webkit-text-fill-color:transparent;filter:drop-shadow(0 1px 0 rgba(255,255,255,.25)) drop-shadow(0 0 10px rgba(41,151,255,.35));animation:gh-shine 6s ease-in-out infinite}
+@keyframes gh-shine{0%,100%{background-position:100% 0}50%{background-position:0 0}}
+@keyframes gh-flow{to{stroke-dashoffset:0}}
+@keyframes gh-breathe{0%,100%{opacity:.45}50%{opacity:1}}
+@media (max-width:760px){.split{grid-template-columns:minmax(0,1fr)}.fork{display:none}}
+@media (prefers-reduced-motion: reduce){.pulse,.core,.glass-text{animation:none}.pulse{stroke-dasharray:none;opacity:.3}.tile:hover{transform:none}}
+</style>
+<style>html{scroll-behavior:smooth}</style>
+</head>
+<body>
+<div style="width: 100%; background: #000000; color: #F5F5F7; font-family: -apple-system, BlinkMacSystemFont, 'SF Pro Display', Inter, 'Helvetica Neue', Arial, sans-serif; -webkit-font-smoothing: antialiased">
+
+<!-- ============ HERO: una señal que converge ============ -->
+<header style="position: relative; height: 880px; overflow: hidden">
+<svg aria-hidden="true" width="1440" height="880" viewBox="0 0 1440 880" style="position: absolute; top: 0; left: 50%; margin-left: -720px">
+<g>
+<path class="trace" d="M0 60 H120 L160 100"></path>
+<path class="trace" d="M1440 60 H1320 L1280 100"></path>
+<path class="trace" d="M0 600 H180 L220 640 H300"></path>
+<path class="trace" d="M1440 600 H1260 L1220 640 H1140"></path>
+<circle class="via" cx="160" cy="100" r="4"></circle>
+<circle class="via" cx="1280" cy="100" r="4"></circle>
+<circle class="via" cx="300" cy="640" r="4"></circle>
+<circle class="via" cx="1140" cy="640" r="4"></circle>
+<path class="trace" d="M0 180 H200 L260 240 H500 L560 300 H660"></path>
+<path class="trace" d="M0 330 H660"></path>
+<path class="trace" d="M0 480 H240 L300 420 H520 L580 360 H660"></path>
+<path class="trace" d="M1440 180 H1240 L1180 240 H940 L880 300 H780"></path>
+<path class="trace" d="M1440 330 H780"></path>
+<path class="trace" d="M1440 480 H1200 L1140 420 H920 L860 360 H780"></path>
+<path class="trace" d="M360 0 V90 L420 150 H640 L690 200 V270"></path>
+<path class="trace" d="M720 0 V270"></path>
+<path class="trace" d="M1080 0 V90 L1020 150 H800 L750 200 V270"></path>
+<path class="trace" d="M720 690 V880"></path>
+</g>
+<g>
+<path class="pulse" pathLength="1000" stroke="#2997FF" style="animation-delay: -0.3s" d="M0 180 H200 L260 240 H500 L560 300 H660"></path>
+<path class="pulse" pathLength="1000" stroke="#2997FF" style="animation-delay: -2.6s; animation-duration: 5.2s" d="M0 330 H660"></path>
+<path class="pulse" pathLength="1000" stroke="#2997FF" style="animation-delay: -1.4s; animation-duration: 6s" d="M0 480 H240 L300 420 H520 L580 360 H660"></path>
+<path class="pulse" pathLength="1000" stroke="#2997FF" style="animation-delay: -3.5s; animation-duration: 5.6s" d="M1440 180 H1240 L1180 240 H940 L880 300 H780"></path>
+<path class="pulse" pathLength="1000" stroke="#2997FF" style="animation-delay: -0.9s" d="M1440 330 H780"></path>
+<path class="pulse" pathLength="1000" stroke="#2997FF" style="animation-delay: -4.1s; animation-duration: 6.4s" d="M1440 480 H1200 L1140 420 H920 L860 360 H780"></path>
+<path class="pulse" pathLength="1000" stroke="#2997FF" style="animation-delay: -2.0s; animation-duration: 5s" d="M360 0 V90 L420 150 H640 L690 200 V270"></path>
+<path class="pulse" pathLength="1000" stroke="#2997FF" style="animation-delay: -3.1s; animation-duration: 4s" d="M720 0 V270"></path>
+<path class="pulse" pathLength="1000" stroke="#2997FF" style="animation-delay: -1.1s; animation-duration: 5.4s" d="M1080 0 V90 L1020 150 H800 L750 200 V270"></path>
+<path class="pulse" pathLength="1000" stroke="#2997FF" style="animation-delay: -0.6s; animation-duration: 2.6s; stroke-dasharray: 160 1840" d="M720 690 V880"></path>
+</g>
+<g>
+<rect x="660" y="270" width="120" height="120" rx="22" fill="#07090D" stroke="#2A3442" stroke-width="1.5"></rect>
+<rect x="676" y="286" width="88" height="88" rx="14" fill="none" stroke="#161C25" stroke-width="1"></rect>
+<rect class="core" x="696" y="306" width="48" height="48" rx="10" fill="none" stroke="#2997FF" stroke-width="2"></rect>
+<circle class="core" cx="720" cy="330" r="5" fill="#2997FF"></circle>
+</g>
+</svg>
+
+<nav aria-label="Principal" style="position: relative; display: flex; align-items: center; justify-content: space-between; gap: 16px; max-width: 1080px; margin: 0 auto; padding: 20px 24px; box-sizing: border-box">
+<a href="#" aria-label="GHilario, inicio" class="glass-pill" style="display: inline-flex; align-items: center; min-height: 44px; padding: 0 20px; border-radius: 980px; text-decoration: none">
+<span class="glass-text" style="font-size: 21px; font-weight: 700; letter-spacing: -0.03em">GHilario</span>
+</a>
+<a href="#contacto" style="color: #A1A1A6; font-size: 13px; min-height: 44px; display: inline-flex; align-items: center">Contacto</a>
+</nav>
+
+<div style="position: absolute; top: 432px; left: 0; right: 0; padding: 0 24px; display: flex; flex-direction: column; align-items: center; gap: 18px; text-align: center">
+<h1 style="margin: 0; font-size: clamp(3rem, 7.5vw, 6rem); line-height: 1; font-weight: 700; letter-spacing: -0.045em; color: #F5F5F7">Ideas en <span style="color: #2997FF">circuito.</span></h1>
+<p style="margin: 0; font-size: clamp(1.05rem, 1.6vw, 1.3rem); line-height: 1.4; color: #86868B; letter-spacing: -0.01em">Proyectos e investigación. Una sola señal.</p>
+</div>
+
+<a href="#mundos" style="position: absolute; top: 620px; left: 50%; transform: translateX(-50%); display: inline-flex; flex-direction: column; align-items: center; gap: 6px; min-height: 44px; font-size: 13px; letter-spacing: 0.08em; text-transform: uppercase; color: #A1A1A6">Sigue la señal
+<svg aria-hidden="true" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"></path></svg>
+</a>
+</header>
+
+<!-- ============ LA BIFURCACIÓN: dos mundos ============ -->
+<section id="mundos" aria-label="Secciones" style="padding: 0 24px 140px">
+<div style="max-width: 1080px; margin: 0 auto">
+<svg class="fork" aria-hidden="true" viewBox="0 0 1080 120" style="width: 100%; height: auto">
+<path class="trace" d="M540 0 V40 L500 80 H306 L266 120"></path>
+<path class="trace" d="M540 0 V40 L580 80 H774 L814 120"></path>
+<path class="pulse" pathLength="1000" stroke="#2997FF" style="animation-duration: 2.6s; animation-delay: -1.5s; stroke-dasharray: 120 1880" d="M540 0 V40 L500 80 H306 L266 120"></path>
+<path class="pulse" pathLength="1000" stroke="#2997FF" style="animation-duration: 2.6s; animation-delay: -1.5s; stroke-dasharray: 120 1880" d="M540 0 V40 L580 80 H774 L814 120"></path>
+</svg>
+
+<div class="split">
+<a class="tile" href="#" style="display: flex; flex-direction: column; justify-content: space-between; min-height: 520px; padding: 48px; box-sizing: border-box; border-radius: 28px; background: #F5F5F7; color: #1D1D1F; text-decoration: none">
+<span style="font-size: 13px; font-weight: 600; letter-spacing: 0.08em; color: #6E6E73">01</span>
+<span style="display: flex; flex-direction: column; gap: 14px">
+<span style="font-size: clamp(2.75rem, 5vw, 4.25rem); line-height: 1; font-weight: 700; letter-spacing: -0.045em">Proyectos.</span>
+<span style="font-size: 19px; line-height: 1.4; color: #424245; max-width: 360px">Lo que ya funciona. Y lo que está a punto de hacerlo.</span>
+</span>
+<span style="display: flex; justify-content: space-between; align-items: center">
+<span style="font-size: 15px; color: #6E6E73">[N] proyectos</span>
+<span style="width: 48px; height: 48px; border-radius: 50%; background: #1D1D1F; color: #FFFFFF; display: inline-flex; align-items: center; justify-content: center">
+<svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"></path></svg>
+</span>
+</span>
+</a>
+
+<a class="tile" href="#" style="display: flex; flex-direction: column; justify-content: space-between; min-height: 520px; padding: 48px; box-sizing: border-box; border-radius: 28px; background: #101114; border: 1px solid #1F2329; color: #F5F5F7; text-decoration: none">
+<span style="font-size: 13px; font-weight: 600; letter-spacing: 0.08em; color: #86868B">02</span>
+<span style="display: flex; flex-direction: column; gap: 14px">
+<span style="font-size: clamp(2.75rem, 5vw, 4.25rem); line-height: 1; font-weight: 700; letter-spacing: -0.045em">Investigación.</span>
+<span style="font-size: 19px; line-height: 1.4; color: #A1A1A6; max-width: 360px">Las preguntas detrás de cada proyecto.</span>
+</span>
+<span style="display: flex; justify-content: space-between; align-items: center">
+<span style="font-size: 15px; color: #86868B">[N] documentos</span>
+<span style="width: 48px; height: 48px; border-radius: 50%; background: #2997FF; color: #000000; display: inline-flex; align-items: center; justify-content: center">
+<svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"></path></svg>
+</span>
+</span>
+</a>
+</div>
+</div>
+</section>
+
+<!-- ============ CIERRE ============ -->
+<footer id="contacto" style="border-top: 1px solid #1C1C1E; padding: 40px 24px">
+<div style="max-width: 1080px; margin: 0 auto; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 16px; font-size: 13px; color: #86868B">
+<span>© 2026 GHilario</span>
+<a href="#" style="font-size: 15px; min-height: 44px; display: inline-flex; align-items: center; color: #2997FF">¿Una idea? Conectémosla →</a>
+</div>
+</footer>
+
+</div>
+</body>
+</html>
